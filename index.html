@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CANCORFANB – Enlaces</title>
+<meta name="description" content="Sitio web y redes sociales de CANCORFANB">
+<style>
+  :root { --azul:#003366; --fondo:#f3f5f8; --texto:#1c2430; --tarjeta:#ffffff; --borde:#d9dee6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#0f1620; --texto:#e8edf3; --tarjeta:#18212d; --borde:#2a3646; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background:var(--fondo); color:var(--texto);
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+         display:flex; align-items:center; justify-content:center; padding:32px 16px; }
+  main { width:100%; max-width:420px; text-align:center; }
+  .sello { width:84px; height:84px; margin:0 auto 16px; border-radius:50%;
+           background:var(--azul); color:#fff; display:grid; place-items:center;
+           font-weight:800; font-size:22px; letter-spacing:1px; }
+  h1 { margin:0 0 4px; font-size:28px; letter-spacing:2px; }
+  p  { margin:0 0 28px; opacity:.75; }
+  a.boton { display:flex; align-items:center; gap:14px; text-decoration:none; color:var(--texto);
+            background:var(--tarjeta); border:1px solid var(--borde); border-radius:14px;
+            padding:16px 18px; margin-bottom:14px; font-size:18px; font-weight:600;
+            transition: transform .1s ease, box-shadow .1s ease; }
+  a.boton:active { transform: scale(.98); }
+  a.boton:hover  { box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+  .icono { width:44px; height:44px; flex:none; border-radius:10px; display:grid; place-items:center; color:#fff; }
+  .web .icono { background:var(--azul); }
+  .ig  .icono { background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4); }
+  .txt { text-align:left; }
+  .txt small { display:block; font-weight:400; font-size:14px; opacity:.7; }
+  svg { width:24px; height:24px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="sello">CAN</div>
+  <h1>CANCORFANB</h1>
+  <p>Visítanos y síguenos</p>
+
+  <a class="boton web" href="https://www.cancorfanb.com.ve/#fanb">
+    <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+    <span class="txt">Sitio web<small>www.cancorfanb.com.ve</small></span>
+  </a>
+
+  <a class="boton ig" href="https://www.instagram.com/cancorfanb_ve/">
+    <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+    <span class="txt">Instagram<small>@cancorfanb_ve</small></span>
+  </a>
+</main>
+</body>
+</html>
